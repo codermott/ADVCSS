@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(135deg, #026b70, #1b014e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.circle {
+    background: radial-gradient(circle, #ff6b6b, #e84747);
+    border-radius: 50%;
+}
+
+.square {
+    background: linear-gradient(135deg, #00f2ff, #4c00e8);
+}
+
+.triangle {
+    background: linear-gradient(45deg, #7cf7ff, #4ee44e);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.pentagon {
+    background: linear-gradient(45deg, #ff9e3a, #ffeb40);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.hexagon {
+    background: linear-gradient(45deg, #4ee44e, #7cf7ff);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.octagon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #ffeb40, #ff8a40);
+    clip-path: polygon(16% 0%, 84% 0%, 100% 16%, 100% 84%, 84% 100%, 16% 100%, 0% 84%, 0% 16%);
+}
