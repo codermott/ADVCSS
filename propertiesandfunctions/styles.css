@@ -1,0 +1,126 @@
+:root {
+  --main-color: #3498db;
+  --secondary-color: yellow;
+  --quote-font-size: 1.2rem;
+  --border-radius: 8px;
+  --gradient-start: #3498db;
+  --gradient-end: #2980b9;
+}
+
+@function adjust-brightness($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #18434e;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.quote-box {
+  position: relative;
+  border: 2px solid var(--main-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  font-size: var(--quote-font-size);
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+  margin: 0;
+  width: 100vw;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 25% 100%);
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__rectangle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.5);
+      z-index: -1;
+    }
+
+    &__image {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      position: absolute;
+      z-index: 1;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
+
+    &__quote,
+    &__author {
+      margin: 0;
+      width: 100%;
+    }
+
+    &__quote {
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    &__author {
+      font-style: italic;
+      color: adjust-brightness(var(--main-color), 50%);
+    }
+  }
+}
+
+.quote-box__content {
+  border: 2px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+}
+
+.stacked-squares {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.square {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.square-bottom {
+  background-color: var(--secondary-color);
+  top: 55px;
+  left: 55px;
+}
+
+.square-top {
+  background-color: yellow;
+  top: 50px;
+  left: 50px;
+}
