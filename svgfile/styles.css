@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.card, .card2 {
+  width: 200px;
+  height: 300px;
+  border: 1px solid #000;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.rect-background {
+  fill: #ffffff;
+}
+
+.heart-number, .spade-number, .heart, .centered-heart, .flipped-heart,
+.spade, .centered-spade, .flipped-spade {
+  font-size: 40px;
+}
+
+.centered-heart, .centered-spade {
+  font-size: 40px;
+}
+
+.flipped-heart, .flipped-spade {
+  transform: scale(1, -1) translate(0, -100px);
+}
+
+.heart-group, .spade-group {
+  transform: translate(50%, 50%);
+}
+
+.heart-group text, .spade-group text {
+  font-size: 30px;
+}
+
+.centered-heart, .flipped-heart, .heart-number, .heart {
+  fill: red;
+}
+
+.spade, .spade-number, .centered-spade, .flipped-spade {
+  fill: black;
+}/*# sourceMappingURL=styles.css.map */

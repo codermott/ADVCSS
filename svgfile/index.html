@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>7 of Hearts</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="100%" height="100%">
+        <rect class="rect-background" width="100%" height="100%"/>
+        <text class="heart-number" x="10%" y="15%">7</text>
+        <text class="heart" x="10%" y="25%">♥</text>
+        
+        <!-- Use a loop to create 7 hearts in the center -->
+        <g class="center-hearts">
+          <text class="centered-heart" transform="rotate(0) translate(60, 140)">♥</text>
+          <text class="centered-heart" transform="rotate(0) translate(120, 140)">♥</text>
+          <text class="centered-heart" transform="rotate(0) translate(60, 170)">♥</text>
+          <text class="centered-heart" transform="rotate(0) translate(120, 170)">♥</text>
+          <text class="centered-heart" transform="rotate(0) translate(60, 200)">♥</text>
+          <text class="centered-heart" transform="rotate(0) translate(120, 200)">♥</text>
+          <text class="centered-heart" transform="rotate(0) translate(90, 170)">♥</text>
+        </g>
+        
+        <text class="flipped-heart" x="80%" y="-45%" transform="scale(1, -1) translate(0, -100)">♥</text>
+        <text class="flipped-heart" x="80%" y="-55%" transform="scale(1, -1) translate(0, -100)">7</text>
+      </svg>
+
+    </div>
+    <div class="card2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="100%" height="100%">
+            <rect class="rect-background" width="100%" height="100%"/>
+            <text class="spade-number" x="10%" y="15%">7</text>
+            <text class="spade" x="10%" y="25%">♠</text>
+            
+            <!-- Use a loop to create 7 spades in the center -->
+            <g class="center-spades">
+              <text class="centered-spade" transform="rotate(0) translate(60, 140)">♠</text>
+              <text class="centered-spade" transform="rotate(0) translate(120, 140)">♠</text>
+              <text class="centered-spade" transform="rotate(0) translate(60, 170)">♠</text>
+              <text class="centered-spade" transform="rotate(0) translate(120, 170)">♠</text>
+              <text class="centered-spade" transform="rotate(0) translate(60, 200)">♠</text>
+              <text class="centered-spade" transform="rotate(0) translate(120, 200)">♠</text>
+              <text class="centered-spade" transform="rotate(0) translate(90, 170)">♠</text>
+            </g>
+            
+            <text class="flipped-spade" x="80%" y="-45%" transform="scale(1, -1) translate(0, -100)">♠</text>
+            <text class="flipped-spade" x="80%" y="-55%" transform="scale(1, -1) translate(0, -100)">7</text>
+          </svg>
+    </div>
+  </div>
+</body>
+</html>
